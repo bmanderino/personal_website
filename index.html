@@ -92,12 +92,19 @@
 		  			<div class="portIcon design devel col-sm-6 col-md-3"><a href="" class="example8" data-toggle="modal" data-target="#modal8"><img src="portfolio/portfolio_08.jpg" alt="" /></a></div>
 				</div>
 			  </div>
-	  </section>
+	  </section>	  
+	  <section  class="container">
+		  <div class="row">
+			  <div class="col-md-12">
+			  	<p><a href="#start">back to top</a></p>
+			  </div>
+			</div>
+		</section>
 	  <section id="about" class="container about">
 		  <div class="row">
 			  <div class="col-md-8">
 				  <h2>About Me</h2>
-				  <p>I am a front-end developer, with over 15 years of web experience. I've worked on projects ranging from large, e-commerce sites to small, Wordpress templates, and most things inbetween. As a front-end developer with a background in design and user experience, I'm able to translate designs into fully functional, pixel-perfect websites and web applications.</p>
+				  <p>I am a front-end developer, with over 15 years of web experience. I've worked on projects ranging from large, e-commerce sites to small, Wordpress templates, and most things inbetween. As a front-end developer with a background in design and user experience, I'm able to translate designs into fully functional, pixel-perfect, responsive websites and web applications.</p>
 				  <p></p>
 			  </div>
 			  <div class="col-md-4 social-icons">
@@ -109,9 +116,8 @@
 	  <section  class="container">
 		  <div class="row">
 			  <div class="col-md-12">
-		  
-		  <p><a href="#start">back to top</a></p>
-	  </div>
+			  	<p><a href="#start">back to top</a></p>
+			  </div>
 	  	</div>
 	  </section>
 	  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -235,28 +241,6 @@
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-	<script>
-	//$(document).ready(function() {
-	//	function scrollToAnchor(aid){
-	//		var aTag = $("section[id='"+ aid +"']");
-	//		$('html,body').animate({scrollTop: aTag.offset().top},'300');
-	//	}
-	//	$("a").click(function() {
-	//		var href = $(this).attr('href').replace('#', '')
-	//		scrollToAnchor(href);
-	//	});
-	//});
-	$(function() {
-	    $('ul.nav a').bind('click',function(event){
-	        var $anchor = $(this);
- 
-	        $('html, body').stop().animate({
-	            scrollTop: $($anchor.attr('href')).offset().top
-	        }, 1500,'easeInOutExpo');
-	  
-	        event.preventDefault();
-	    });
-	});
-	</script>
+	<script src="js/script.js"></script>
   </body>
 </html>
