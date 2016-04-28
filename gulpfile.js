@@ -13,7 +13,7 @@ var gulp = require('gulp'),
  	.pipe(concat('custom.css'))
  	.pipe(autoprefix('last 2 version'))
  	.pipe(cleanCSS())
- 	.pipe(gulp.dest('dist/css/'))
+ 	.pipe(gulp.dest('css/'))
 });
 gulp.task('jshint', function() {
     return gulp.src('js/*.js')
@@ -24,3 +24,16 @@ gulp.task('watch', function() {
     gulp.watch('js/*js', ['jshint']);
 });
 gulp.task('default', ['styles', 'jshint','watch']);
+
+
+var moveFiles = [
+	'index.html',
+	'./css/*.css',
+	'./js/*',
+	'./img/*',
+	'./portfolio/*'
+];
+gulp.task('deploy', function() {
+	return gulp.src(moveFiles, {base: './'})
+		.pipe(gulp.dest('dist'))
+});

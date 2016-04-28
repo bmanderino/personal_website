@@ -19,8 +19,6 @@
 *.rar
 *.tar
 *.zip
-node_modules/
-fonts/
 
 # Logs and databases #
 ######################
@@ -42,3 +40,6 @@ Thumbs.db
 #############
 placeholder.html
 package.json
+dist/
+node_modules/
+fonts/
