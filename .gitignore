@@ -42,4 +42,4 @@ placeholder.html
 package.json
 dist/
 node_modules/
-fonts/
+src/fonts/
